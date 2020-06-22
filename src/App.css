@@ -1,38 +1,229 @@
-.App {
+/*Globals*/
+
+input:focus{
+  outline-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+/*Cabecera*/
+
+header {
+  background-color: #3d3d3d;
+}
+#cabecera {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0;
+  }
+  .logo {
+  width: 25%;
+  font-size: 26px;
+  font-weight: bold;
+  color: #FFF;  
+}
+.buscador {
+  width: 50%;
+  display: flex;
+}
+.buscador input {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 100%;
+  padding: 13px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+.buscador button {
+  background: #3172d8;
+  color: #FFF;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 13px;
+}
+.enlaces {
+  width: 25%;
+  text-align: right;
+}
+
+a{
+  text-decoration: none;
+}
+
+.enlaces a {
+  color: #FFF;
+  margin-left: 20px;
+}
+
+
+
+#principal, #productoDetalle, #login, #noencontrado, #carrito {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.caja {
+  display: inline-block;
+  width: calc(20% - 30px);
+  border: 1px solid #eee;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #FFF;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.lista .caja:nth-child(5n) {
+  margin-right: 0;
+}
+.foto img{
+  width: 100%;
+}
+.nombre {
+  font-size: 16px;
+}
+.precio {
+  font-size: 18px;
+  color: #ea2840;
+}
+
+
+footer {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #eee;
+  font-weight: 600;
+}
+
+.nombre {
+  font-size: 16px;
+  color: #333;
+}
+
+/*Para el componente Producto Detalle*/
+
+.ruta {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.cajaProducto {
+  display: flex;
+}
+.imagen, .datos {
+  width: 50%;
+}
+
+.imagen {
+  text-align: center;
+  background: #FFF;
+  padding: 20px 10px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.datos .precio {
+  font-weight: bold;
+  font-size: 22px;
+}
+.datos .controles {
+  display: flex;
+  margin-top: 20px;
+}
+.datos .cajaCantidad {
+  margin-right: 10px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+}
+.datos .btnCarrito {
+  background-color: #3172D8;
+  color: #FFF;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.ruta a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+.ruta a:hover{
+  color: #3172D8;
+}
+
+.logo a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#login {
+  text-align: center;
+}
+.input_login {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  padding: 10px;
+  font-size: 14px;
+  width: 300px;
+}
+.btnIngresar {
+  background-color: #3172D8;
+  color: #FFF;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 320px;
+}
+
+
+/*Estilos para carrito*/
+.tabla_carrito {
+  border: 1px solid #eee;
+  background-color: #fff;
+  width: 100%;
+}
+.tabla_carrito thead {
+  background-color: #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tabla_carrito td{
+  padding: 4px 6px;
+}
+
+.tabla_carrito tbody td{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tabla_carrito tbody td:first-child{
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tabla_carrito button{
+  border: 0;
+  background-color: red;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabla_carrito tfoot {
+  font-weight: bold;
 }

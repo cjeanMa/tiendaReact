@@ -1,0 +1,16 @@
+{
+	"productos":[
+		{"id":1,"nombre":"Fanta 400ml","precio":1.80,"imagen":"fanta.jpg"},
+		{"id":2,"nombre":"Casino","precio":0.70,"imagen":"casino.jpg"},
+		{"id":3,"nombre":"Cheetos","precio":1.00,"imagen":"cheetos.jpg"},
+		{"id":4,"nombre":"Oreo","precio":0.80,"imagen":"oreo.jpg"},
+		{"id":5,"nombre":"Coca Cola 500ml","precio":1.00,"imagen":"cocacola.jpg"},
+		{"id":6,"nombre":"Sublime","precio":1.50,"imagen":"sublime.jpg"},
+		{"id":7,"nombre":"Princesa","precio":1.30,"imagen":"princesa.jpg"}
+	],
+	"usuarios":[
+		{"id":1,"nombre":"Felipe","apellido":"Linares","email":"flinares@mail.com","telefono":"963636363","direccion":"Los Olivos"},
+		{"id":2,"nombre":"Karen","apellido":"García","email":"kgarcia@mail.com","telefono":"945454545","direccion":"Comas"}
+	],
+	"ventas":[]
+}
